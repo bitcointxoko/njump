@@ -13,9 +13,9 @@ module.exports = {
       },
       colors: {
         lavender: '#fdf0f5',
-        strongpink: '#e32a6d',
+        strongpink: '#f59e0b',
         crimson: '#bc1150',
-        garnet: '#42091e'
+        garnet: '#3f3f46'
       },
       borderWidth: {
         '05rem': '0.5rem' // you can define custom border widths in rem units

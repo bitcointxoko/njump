@@ -15,7 +15,7 @@ type ClientReference struct {
 func generateClientList(style Style, code string, event *nostr.Event) []ClientReference {
 	if event.Kind == 1 || event.Kind == 6 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "snort", Name: "Snort", URL: template.URL("https://Snort.social/e/" + code)},
 			{ID: "nostrudel", Name: "Nostrudel", URL: template.URL("https://nostrudel.ninja/#/n/" + code)},
 			{ID: "satellite", Name: "Satellite", URL: template.URL("https://satellite.earth/thread/" + event.ID)},
@@ -27,7 +27,7 @@ func generateClientList(style Style, code string, event *nostr.Event) []ClientRe
 		}
 	} else if event.Kind == 0 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "nosta", Name: "Nosta", URL: template.URL("https://nosta.me/" + code)},
 			{ID: "snort", Name: "Snort", URL: template.URL("https://snort.social/p/" + code)},
 			{ID: "satellite", Name: "Satellite", URL: template.URL("https://satellite.earth/@" + code)},
@@ -39,7 +39,7 @@ func generateClientList(style Style, code string, event *nostr.Event) []ClientRe
 		}
 	} else if event.Kind == 30023 || event.Kind == 30024 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "yakihonne", Name: "YakiHonne", URL: template.URL("https://yakihonne.com/article/" + code)},
 			{ID: "habla", Name: "Habla", URL: template.URL("https://habla.news/a/" + code)},
 			{ID: "highlighter", Name: "Highlighter", URL: template.URL("https://highlighter.com/a/" + code)},
@@ -47,19 +47,19 @@ func generateClientList(style Style, code string, event *nostr.Event) []ClientRe
 		}
 	} else if event.Kind == 1063 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "snort", Name: "Snort", URL: template.URL("https://snort.social/p/" + code)},
 			{ID: "coracle", Name: "Coracle", URL: template.URL("https://coracle.social/" + code)},
 		}
 	} else if event.Kind == 30311 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "zap.stream", Name: "zap.stream", URL: template.URL("https://zap.stream/" + code)},
 			{ID: "nostrudel", Name: "Nostrudel", URL: template.URL("https://nostrudel.ninja/#/streams/" + code)},
 		}
 	} else if event.Kind == 1311 {
 		return []ClientReference{
-			{ID: "native", Name: "your native client", URL: template.URL("nostr:" + code)},
+			{ID: "native", Name: "tu cliente nativo", URL: template.URL("nostr:" + code)},
 			{ID: "zap.stream", Name: "zap.stream", URL: template.URL("https://zap.stream/" + code)},
 			{ID: "nostrudel", Name: "Nostrudel", URL: template.URL("https://nostrudel.ninja/#/streams/" + code)},
 		}
