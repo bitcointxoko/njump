@@ -38,26 +38,26 @@
             {{ if or (not (eq "" .Metadata.Website)) (not (eq ""
             .RenderedAuthorAboutText)) }}
           </div>
-          <div class="-ml-4 mb-6 h-1.5 w-1/2 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div>
+          <!-- <div class="-ml-4 mb-6 h-1.5 w-1/2 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div> -->
           <div class="mb-6 leading-5">{{.Metadata.Website}}</div>
           <div class="prose mb-6 leading-5 dark:prose-invert prose-headings:font-light sm:prose-a:text-justify">
             {{.RenderedAuthorAboutText}}
           </div>
           {{ end }}
-          <div class="-ml-4 mb-6 h-1.5 w-1/3 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div>
+          <!-- <div class="-ml-4 mb-6 h-1.5 w-1/3 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div> -->
           <div class="mb-6 leading-5">
             <div class="text-sm text-strongpink">Clave pública</div>
-            {{.Npub}}
+            <div class="font-mono text-sm">{{.Npub}}</div>
           </div>
           <div class="mb-6 leading-5">
             {{ if not (eq "" .Metadata.NIP05) }}
             <div class="text-sm text-strongpink">Dirección NIP-05</div>
-            {{.Metadata.NIP05}} {{ end }}
+            <div class="font-mono text-sm">{{.Metadata.NIP05}} {{ end }}</div>
           </div>
           <div class="mb-6 leading-5">
             {{ if not (eq "" .Metadata.LUD16) }}
             <div class="text-sm text-strongpink">Dirección NIP-57</div>
-            {{.Metadata.LUD16}} {{ end }}
+            <div class="font-mono text-sm">{{.Metadata.LUD16}} {{ end }}</div>
           </div>
           <!-- <div class="mb-6 leading-5">
               <div class="text-sm text-strongpink">Profile Code</div>
@@ -67,14 +67,14 @@
           {{ if not (eq 0 (len .AuthorRelays)) }}
           <div class="mb-6 leading-5">
             <div class="text-sm text-strongpink">Publica en</div>
-            {{range $index, $element := .AuthorRelays}}
+            <div class="font-mono">{{range $index, $element := .AuthorRelays}}</div>
             <span
               class="mr-1 mt-2 inline-block max-w-full rounded-lg border border-slate-300 px-2 py-0.5">{{$element}}</span>
             {{end}}
           </div>
           {{ end }}
         </div>
-        <div class="-ml-4 mb-6 h-1.5 w-1/3 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div>
+        <!-- <div class="-ml-4 mb-6 h-1.5 w-1/3 bg-zinc-100 dark:bg-zinc-700 sm:-ml-2.5"></div> -->
       </div>
     </a>
     <div class="text-sm leading-3 text-neutral-400">

@@ -12,7 +12,7 @@ module.exports = {
         '2xl': ['1.5rem']
       },
       colors: {
-        lavender: '#fdf0f5',
+        lavender: '#cbd5e1',
         strongpink: '#f59e0b',
         crimson: '#bc1150',
         garnet: '#3f3f46'
@@ -35,8 +35,8 @@ module.exports = {
             '--tw-prose-invert-links': theme('colors.neutral[50]'),
             maxWidth: '100%',
             a: {
-              'font-weight': 300,
-            },
+              'font-weight': 300
+            }
           }
         }
       })
