@@ -94,7 +94,7 @@
         {{ if not (eq 0 (len .AuthorRelays)) }}
         <div class="mb-6 leading-5">
           <div class="text-sm text-strongpink">Publica en</div>
-          <div class="font-mono text-sm">{{range $index, $element := .AuthorRelays}}</div>
+          {{range $index, $element := .AuthorRelays}}
           <a href="/r/{{$element}}"
             class="mr-1 mt-2 inline-block max-w-full rounded-lg border border-slate-300 px-2 py-0.5 hover:border hover:border-solid hover:border-strongpink hover:bg-strongpink hover:text-white">{{$element}}</a>
           {{end}}
