@@ -327,7 +327,7 @@ func renderQuotesAsHTML(ctx context.Context, input string, usingTelegramInstantV
 		}
 
 		content := fmt.Sprintf(
-			`<blockquote class="border-l-05rem border-l-strongpink border-solid"><div class="-ml-4 bg-gradient-to-r from-gray-100 dark:from-zinc-800 to-transparent mr-0 mt-0 mb-4 pl-4 pr-2 py-2">quoting %s </div> %s </blockquote>`, match, event.Content)
+			`<blockquote class="border-l-05rem border-l-strongpink border-solid"><div class="-ml-4 bg-gradient-to-r from-gray-100 dark:from-zinc-800 to-transparent mr-0 mt-0 mb-4 pl-4 pr-2 py-2">citando %s </div> %s </blockquote>`, match, event.Content)
 		return basicFormatting(content, false, usingTelegramInstantView, false)
 	})
 }
