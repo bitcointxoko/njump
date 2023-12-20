@@ -77,8 +77,7 @@
           <div class="mb-6 leading-5">
             <h2 class="text-2xl text-strongpink">Últimas notas</h2>
             {{range $i, $ee := .LastNotes}}
-            <a class="my-8 block no-underline hover:-ml-6 hover:border-l-05rem hover:border-solid hover:border-l-gray-100 hover:pl-4 dark:hover:border-l-zinc-700"
-              href="/{{$ee.Nevent}}">
+            <a class="my-8 block no-underline hover:-ml-6 hover:pl-4 " href="/{{$ee.Nevent}}">
               <div
                 class="-ml-2.5 mb-1.5 flex flex-row border-b border-dotted border-b-gray-300 pb-1 pl-2.5 dark:border-b-neutral-300">
                 <div class="text-sm text-strongpink">
